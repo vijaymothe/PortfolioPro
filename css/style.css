@@ -21,6 +21,7 @@ body{
 
 :root {
     --main_color: #FD562A;
+    --clr_white: #ffffff;
     --poppins: 'Poppins', sans-serif;
   }
 
@@ -172,4 +173,106 @@ body{
 }
 .header-left .img-box img{
     width: 100%;
+    transition: .6s;
+}
+
+.header-left .img-box img:hover{
+    transform: rotate3d(1, 1, 1, 10deg);
+}
+
+.header-left .img-box .social-icons{
+    width: 100%;
+    height: 6rem;
+    /* padding: 0 6rem; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    bottom: -20%;
+    /* border: 2px solid red; */
+}
+
+.header-left .img-box .social-icons a{
+    font-size: 2.5rem;
+    display: inline-block;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.301), -2px -2px 3px rgba(255, 255, 255, 0.200);
+    width: 5rem;
+    height: 5rem;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    color: var(--clr_white);
+    transition: .3s linear;
+}
+
+.header-left .img-box .social-icons a:hover{
+    color: var(--main_color);
+    box-shadow: none;
+}
+
+
+#my-world{
+    width: 100vw;
+    /* height: 100vh; */
+    padding: 8rem 10rem;
+}
+
+#my-world .heading{
+    text-align: center;
+    margin-bottom: 2rem;
+    font-family: var(--poppins);
+    color: var(--clr_white);
+    
+}
+#my-world .heading span{
+    font-size: 3rem;
+}
+
+#my-world .para{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 300;
+    font-family: var(--poppins);
+    color: rgba(255, 255, 255, 0.67);
+}
+
+#my-world .cards{
+    margin-top: 8rem;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 2px solid red; */
+}
+
+#my-world .cards .card{
+    padding: 4rem 3rem;
+    width: 32%;
+    height: 100%;
+    border-radius: 1rem;
+    /* background-color: #2f3033; */
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.301), -2px -2px 3px rgba(255, 255, 255, 0.200);
+    /* border: 2px solid red; */
+}
+#my-world .cards .card:hover .card-icon{
+    color: var(--main_color);
+}
+
+#my-world .cards .card h2{
+    margin-bottom: 2rem;
+    font-size: 6rem;
+    color: white;
+    transition: .3s linear;
+}
+#my-world .cards .card h1{
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    color: white;
+    font-family: var(--poppins);
+}
+#my-world .cards .card p{
+    font-size: 1.6rem;
+    color: rgba(255, 255, 255, 0.648);
+    font-family: var(--poppins);
 }
