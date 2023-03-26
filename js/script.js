@@ -3,7 +3,7 @@ const imgCards = document.querySelectorAll(".img-cards"); // select all img-card
 
 aTags.forEach(a => {
   a.addEventListener("click", function() {
-    const idToShow = this.textContent.trim(); // get the text content of the clicked a tag
+    const idToShow = this.textContent.trim();  // get the text content of the clicked a tag
     imgCards.forEach(card => {
       if (card.id === idToShow) {
         card.style.display = "grid"; // show the img-card with the matching id
@@ -38,11 +38,3 @@ button.addEventListener("click", function() {
     div.style.display = "flex";
   }
 });
-
-// button.addEventListener("click", function() {
-//     if (div.style.height === "0") {
-//       div.style.height = "60%";
-//     } else {
-//       div.style.height = "0";
-//     }
-//   });
