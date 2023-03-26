@@ -963,3 +963,20 @@ body{
         transform: translateX(-100%);
     }
   }
+
+
+
+
+
+/* =========================MEDIA QUERIES========================= */
+@media (max-width: 992px){
+    html{
+        font-size: 50%;
+    }
+    .nav-right{
+        display: none !important;
+    }
+    .dropdown-main .dropdown-btn{
+        display: block;
+    }
+}
