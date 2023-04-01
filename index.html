@@ -53,7 +53,7 @@
         <div class="header-main">
             <div class="header-left">
                 <div class="img-box">
-                    <img src="./images/man_profile.jpg" alt="">
+                    <img src="./images/man_profile.jpg" alt="">     
                     <div class="social-icons">
                         <a href=""><i class="fab fa-linkedin"></i></a>
                         <a href=""><i class="fab fa-instagram"></i></a>
@@ -110,28 +110,28 @@
                 grid_view
                 </span></h2>
             <h1>Digital <br>Products</h1>
-            <h3>30</h3>
+            <h3 id="number"></h3>
         </div>
         <div class="card">
             <h2><span class="material-symbols-outlined">
                 productivity
                 </span></h2>
             <h1>Clients <br>Worldwide</h1>
-            <h3>200+</h3>
+            <h3 id="number1"></h3>
         </div>
         <div class="card">
             <h2><span class="material-symbols-outlined">
                 business_center
                 </span></h2>
             <h1>Total <br>Projects</h1>
-            <h3>950+</h3>
+            <h3 id="number2"></h3>
         </div>
         <div class="card">
             <h2><span class="material-symbols-outlined">
                 social_leaderboard
                 </span></h2>
             <h1>Awards <br>Won</h1>
-            <h3>19</h3>
+            <h3 id="number3"></h3>
         </div>
     </div>
 
@@ -209,28 +209,48 @@
     <div id="skills">
         <div class="left">
             <h4>MY SKILLS</h4>
-            <h1>I'm great in what I <br>do and I'm loving it</h1>
+            <h1>I'm great in what I do <br> and I'm loving it</h1>
             <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
                 dolore eu fugiat nulla pariat non proident, sunt in culpa qui officia 
                 deserunt mollit anim id est laborum.
             </p>
         </div>
         <div class="right">
-            <div class="skill">
-                <label for="bar">Competitive Programming <span>84%</span></label>
-                <div id="bar"></div>
+            <div class="skill_bar">
+                <div class="info">
+                    <p>Competitive Programming</p>
+                    <P id="num"></P>
+                </div>
+                <div class="bar">
+                    <span class="html"></span>
+                </div>
+            </div>    
+            <div class="skill_bar">
+                <div class="info">
+                    <p>Algorithm & Data Structure</p>
+                    <P id="num1"></P>
+                </div>
+                <div class="bar">
+                    <span class="css"></span>
+                </div>
             </div>
-            <div class="skill">
-                <label for="bar">Algorithm & Data Structure <span>50%</span></label>
-                <div id="bar"></div>
-            </div>
-            <div class="skill">
-                <label for="bar">Game Development <span>75%</span></label>
-                <div id="bar"></div>
-            </div>
-            <div class="skill">
-                <label for="bar">Web Application <span>96%</span></label>
-                <div id="bar"></div>
+            <div class="skill_bar">
+                <div class="info">
+                    <p>Game Development</p>
+                    <P id="num2"></P>
+                </div>
+                <div class="bar">
+                    <span class="sass"></span>
+                </div>
+      </div>
+      <div class="skill_bar">
+                <div class="info">
+                    <p>Web Application</p>
+                    <P id="num3"></P>
+                </div>
+                <div class="bar">
+                    <span class="react"></span>
+                </div>
             </div>
         </div>
     </div>
@@ -730,8 +750,55 @@
             </div>
         </div>
     </div>
-
-
+      <div id="contact">
+        <h3>GET IN TOUCH</h3>
+        <p class="test-para">Duis aute irure dolor in reprehen pteur sint occaecat cupidatat non <br>proident, sunt in culim id est.</p>
+        <div class="cont-page-box">
+            <div class="contact-page">
+               <div class="icon-cont">
+                <i class="solid fas fa-map-marker-alt"></i>
+               </div>
+               <div class="cont-page">
+                <h4>Address</h4>
+                <p class="cont-para">Bardeshi, Amin Bazar, New York</p>
+               </div>
+            </div>
+            <div class="contact-page">
+                <div class="icon-cont">
+                    <i class="solid fas fa-map-marker-alt"></i>
+                   </div>
+                   <div class="cont-page">
+                    <h4>Phone</h4>
+                    <p class="cont-para">+01234 567 890</p>
+                   </div>
+            </div>
+            <div class="contact-page">
+                <div class="icon-cont">
+                    <i class="solid fas fa-map-marker-alt"></i>
+                   </div>
+                   <div class="cont-page">
+                    <h4>Email</h4>
+                    <p class="cont-para">hello@poriweb.com</p>
+                   </div>
+            </div>
+            
+        </div>
+        <div class="cont-message">
+              <div class="left-cont-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15135.445732555887!2d73.81149916967787!3d18.489934747840636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bfe79bf771d7%3A0xac81e25be4cc4bf!2sKarve%20Nagar%2C%20Pune%2C%20Maharashtra%20411052!5e0!3m2!1sen!2sin!4v1680000200950!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+              <div class="right-cont-msg">
+                    <h2>Write me a message</h2>
+                    <div class="input-box">
+                        <input type="text" placeholder="Name*">
+                        <input type="email" name="" id="" placeholder="Email*">
+                    </div>
+                        <textarea class="textarea-box" name="text" id="" cols="30" rows="10" placeholder="your message here*"></textarea>
+                       <button class="cont-btn">SEND MESSAGE</button>
+              </div>
+        </div>
+      </div>
+     
     <!-- ==================JAVASCRIPT====================== -->
     <script src="./js/font-awesome.js"></script>
     <script src="./js/flickity.pkgd.min.js"></script>
